@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +21,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header #logo {
+  margin-left: 2rem;
+  font-family: 'Allison',cursive;
+  font-size: 2rem;
 }
 
 header nav {
@@ -61,15 +68,19 @@ header nav ul a:hover {
   font-weight: 600;
 }
 
+body {
+  overflow: hidden;
+}
+
 .planner {
   width: 100vw;
-  height: 100vh;
+  height: 88vh;
   background-color: coral;
 }
 
 .container {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;

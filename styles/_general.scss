@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
 $primaryColor : linear-gradient(to top right, #ff9966, #ff5e62);
 $backgroundColor : #ffebd3;
 $primaryTextColor : #8a362d;
@@ -21,6 +23,11 @@ header{
     min-height: 12vh;
     display: flex;
     align-items: center;
+    #logo{
+        margin-left: 2rem;
+        font-family: 'Allison',cursive;
+        font-size: 2rem;
+    }
     nav{
         height:100%;
         width:50%;
