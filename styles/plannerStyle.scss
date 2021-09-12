@@ -1,0 +1,58 @@
+@import "./general";
+
+.planner{
+    width: 100vw;
+    height: 100vh;
+    background-color: coral;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "weekly weekly weekly goalstoday goalstoday goalstoday goalstoday"
+      "weekly weekly weekly notes notes inspirations inspirations"
+      "weekly weekly weekly notes notes inspirations inspirations"
+      "weekly weekly weekly notes notes inspirations inspirations"
+      "weekly weekly weekly impDates impDates impDates impDates";
+}
+  
+.weekly {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "mon mon mon"
+    "tue tue tue"
+    "wed wed wed"
+    "thu thu thu"
+    "fri fri fri"
+    "sat sat sat"
+    "sun sun sun";
+    grid-area: weekly;
+}
+
+.mon { grid-area: mon; background-color: lightcoral;}
+.tue { grid-area: tue;}
+.wed { grid-area: wed; background-color: lightcoral;}
+.thu { grid-area: thu; }
+.fri { grid-area: fri; background-color: lightcoral;}
+.sat { grid-area: sat; }
+.sun { grid-area: sun; background-color: lightcoral;}
+  
+.goalstoday { grid-area: goalstoday; background-color: lightsalmon;}
+  
+.notes { grid-area: notes; background-color: coral;}
+  
+.inspirations { grid-area: inspirations; background-color: lightcoral;}
+  
+.impDates { grid-area: impDates; background-color: pink;}
+  
+    

@@ -1,0 +1,56 @@
+$primaryColor : linear-gradient(to top right, #ff9966, #ff5e62);
+$backgroundColor : #ffebd3;
+$primaryTextColor : #8a362d;
+$secondaryTextColor : white;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background: $backgroundColor;
+}
+
+header{
+    background: $primaryColor;
+    color: $secondaryTextColor;
+    min-height: 12vh;
+    display: flex;
+    align-items: center;
+    nav{
+        height:100%;
+        width:50%;
+        margin-left:auto;
+        ul{
+            list-style: none;
+            font-size: 1rem;
+            // height:100%;
+            // width:50%;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            a{
+                color:white;
+                text-decoration: none;
+                font-family: 'Montserrat', sans-serif;
+                &::after {
+                    display: block;
+                    content: attr(data-tooltip);
+                    font-weight: 600;
+                    height: 1px;
+                    color: transparent;
+                    overflow: hidden;
+                    visibility: hidden;
+                    
+                  }
+                &:hover{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #ffebd3;
+}
+
+header {
+  background: -webkit-gradient(linear, left bottom, right top, from(#ff9966), to(#ff5e62));
+  background: linear-gradient(to top right, #ff9966, #ff5e62);
+  color: white;
+  min-height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav {
+  height: 100%;
+  width: 50%;
+  margin-left: auto;
+}
+
+header nav ul {
+  list-style: none;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header nav ul a::after {
+  display: block;
+  content: attr(data-tooltip);
+  font-weight: 600;
+  height: 1px;
+  color: transparent;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+header nav ul a:hover {
+  font-weight: 600;
+}
+
+.planner {
+  width: 100vw;
+  height: 100vh;
+  background-color: coral;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+      grid-template-areas: "weekly weekly weekly goalstoday goalstoday goalstoday goalstoday" "weekly weekly weekly notes notes inspirations inspirations" "weekly weekly weekly notes notes inspirations inspirations" "weekly weekly weekly notes notes inspirations inspirations" "weekly weekly weekly impDates impDates impDates impDates";
+}
+
+.weekly {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+      grid-template-areas: "mon mon mon" "tue tue tue" "wed wed wed" "thu thu thu" "fri fri fri" "sat sat sat" "sun sun sun";
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: weekly;
+}
+
+.mon {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: mon;
+  background-color: lightcoral;
+}
+
+.tue {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: tue;
+}
+
+.wed {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: wed;
+  background-color: lightcoral;
+}
+
+.thu {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: thu;
+}
+
+.fri {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: fri;
+  background-color: lightcoral;
+}
+
+.sat {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: sat;
+}
+
+.sun {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: sun;
+  background-color: lightcoral;
+}
+
+.goalstoday {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-area: goalstoday;
+  background-color: lightsalmon;
+}
+
+.notes {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: notes;
+  background-color: coral;
+}
+
+.inspirations {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-area: inspirations;
+  background-color: lightcoral;
+}
+
+.impDates {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-area: impDates;
+  background-color: pink;
+}
+/*# sourceMappingURL=plannerStyle.css.map */
