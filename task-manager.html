@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/taskManagerStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Task Manager</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-tooltip="Home">Home</a></li>
+                <li><a href="" data-tooltip="Schedule">Schedule</a></li>
+                <li><a href="planner.html" data-tooltip="Planner">Planner</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="todo">
+            <h1>To-Do</h1>
+            <form>
+                <input type="text" class="addtodo" label="Enter a task">
+                <button class="addBtn" type="submit">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </form>
+            <div class="todoContainer">
+                <ul class="todoList">
+                </ul>
+            </div>
+        </div>
+        <div class="done">
+            <h1>Done</h1>
+            <div class="doneContainer">
+                <ul class="doneList">
+                </ul>
+            </div>
+        </div>
+        <div class="rewards"></div>
+      </div>
+      <script src="scripts/app-task-manager.js"></script>
+</body>
+
+</html>
